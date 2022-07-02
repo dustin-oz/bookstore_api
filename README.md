@@ -12,6 +12,7 @@ rails g scaffold book title:string body:text
 `
 
 Added gem to allow front end in React later perhaps
+
 `
 gem "rack-cors"
 `
