@@ -14,7 +14,7 @@ rails g scaffold book title:string body:text
 gem "rack-cors"
 `
 
-The generic controller is builds:
+The generic controller it builds:
 
 ```ruby
 class BooksController < ApplicationController
