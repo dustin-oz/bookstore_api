@@ -11,6 +11,14 @@ rails g scaffold book title:string body:text
 `
 
 `
+rails db:seed
+`
+
+`
+rails db:migrate
+`
+
+`
 gem "rack-cors"
 `
 
