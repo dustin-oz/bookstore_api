@@ -4,7 +4,7 @@ import axios from 'axios';
 import Books from './components/books';
 import { useEffect, useState } from 'react';
 
-const API_URL = "http://127.0.0.1:3000/books";
+const API_URL = "http://127.0.0.1:3000/api/v1/books";
 
 const getAPIData = async () => {
   const response = await axios.get(API_URL);
