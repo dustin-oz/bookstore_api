@@ -1,19 +1,19 @@
 class Api::V1::BooksController < ApplicationController
   before_action :set_book, only: %i[ show update destroy ]
 
-  # GET /books
+  # GET api/v1/books
   def index
     @books = Book.all
 
     render json: @books
   end
 
-  # GET /books/1
+  # GET api/v1/books/1
   def show
     render json: @book
   end
 
-  # POST /books
+  # POST api/v1/books
   def create
     @book = Book.new(book_params)
 
@@ -24,7 +24,7 @@ class Api::V1::BooksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /books/1
+  # PATCH/PUT api/v1/books/1
   def update
     if @book.update(book_params)
       render json: @book
@@ -33,7 +33,7 @@ class Api::V1::BooksController < ApplicationController
     end
   end
 
-  # DELETE /books/1
+  # DELETE api/v1/books/1
   def destroy
     @book.destroy
   end
